@@ -20,11 +20,12 @@ class Function:
     def backward(self, gy):
         raise NotImplementedError()
 
-# xの2乗を計算する関数
+# xの2乗を計算する関数 
 class Square(Function):
     def forward(self, x):
         return x ** 2
 
+# exp関数を計算する関数
 class Exp(Function):
     def forward(self, x):
         return np.exp(x)
